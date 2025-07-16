@@ -17,7 +17,8 @@
 
 ## Compile TypeScript to JavaScript
 → tsc main.ts && node main.js
-→ This compiles and runs it in one line.
+→ This compiles and runs it in one line.d
+
 
 
 
