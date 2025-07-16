@@ -45,15 +45,15 @@ console.log(username);
 ->it woks for single file 
 
 ## file structure
-project-root/
-├── src/         → Source code (TypeScript files: `.ts`)
-│   └── main.ts
-├── build/       → Compiled output (JavaScript, HTML, CSS)
-│   ├── index.html
-│   ├── style.css
-│   └── main.js   ← compiled from main.ts
-├── tsconfig.json
-└── README.md
+project-root/  
+├── src/         → Source code (TypeScript files: `.ts`)  
+│   └── main.ts  
+├── build/       → Compiled output (JavaScript, HTML, CSS)  
+│   ├── index.html  
+│   ├── style.css  
+│   └── main.js   ← compiled from main.ts  
+├── tsconfig.json  
+└── README.md  
 
 
 
