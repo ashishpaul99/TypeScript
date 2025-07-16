@@ -1,11 +1,11 @@
 # TypeScript
 ## 1. What is typescript?
-→ TypeScript is JavaScript with syntax for types.
-->TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.
-->TypeScript and c# created by Anders.
-->TypeScript is Javascipt.
-->it is used to write better js.
-->ts extends js
+→ TypeScript is JavaScript with syntax for types.  
+->TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.  
+->TypeScript and c# created by Anders.  
+->TypeScript is Javascipt.  
+->it is used to write better js.  
+->ts extends js  
 
 ---
 
