@@ -55,6 +55,35 @@ project-root/
 ├── tsconfig.json  
 └── README.md  
 
+→ how to make known typescript that all ts files are in src?
+→ create tsconfig.json →  tsc → init
+→ find "rootDir" → give src file
+→ telling typescript that ts file present in src.
+→ "rootDir": "./src",
+  "outDir": "./build/js"
+→ This setup will:
+  Read .ts files from src/
+  Compile them to build/
+→ "outDir": "./build/js" is perfectly valid if you want the compiled .js files to go inside a subfolder called js inside your build/ folder.
+→ type cmd → tsc -w → it created js folder with main.js file
+→ if ts file is created in src then paralley js file for it will create in js folder.
+→ Open terminal → type: `tsc -w`
+→ This runs TypeScript in **watch mode**, which automatically recompiles `.ts` files when you save them.
+→ If a `.ts` file is created in the `src/` folder, a parallel `.js` file will be generated in the `build/js/` folder (as per `tsconfig.json`).
+→ For example:
+  - `src/main.ts` → compiles to → `build/js/main.js`
+  - `src/utils/helper.ts` → compiles to → `build/js/utils/helper.js`
+→
+→
+→
+
+→
+
+
+
+
+
+
 
 
 
