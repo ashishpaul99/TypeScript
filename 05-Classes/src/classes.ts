@@ -143,17 +143,3 @@ console.log(bands.data);
 bands.data = [...bands.data, 'Bannu']; // spread & setter
 console.log(bands.data);         
 // Output: ['Ashish', 'Paul', 'Bannu']
-
-
-
-
-
-
-
-
-
-
-
-
-
-
