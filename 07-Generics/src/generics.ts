@@ -2,8 +2,6 @@
 // const stringEcho=(arg:string):string => arg
 // console.log(stringEcho("hello")); //o/p: hello
 
-
-
 // eg-1: genric function
 // <T> -> type paremeter or type variable
 
@@ -138,39 +136,39 @@
 
 // eg-7:using generic in class
 
-class storeObj<T>{
-    private data;
+// Generic class definition
+// class storeObj<T> {
+//   private data: T;
 
-    constructor(value:T){
-        this.data=value
-    }
+//   constructor(value: T) {
+//     this.data = value;
+//   }
 
-    get state(){
-        return this.data
-    }
+//   // Getter
+//   get state() {
+//     return this.data;
+//   }
 
-    set state(value:T){
-       this.data=value
-    }
-}
+//   // Setter
+//   set state(value: T) {
+//     this.data = value;
+//   }
+// }
 
-// If we intialize class with string data we can get and set string type data only -> constructor storeObj<string>(value: string): storeObj<string>
+// // ✅ Example 1: Working with strings
 // const storeString = new storeObj("kfc");
-// console.log(store.state);  //o/p:kfc
-// store.state="Burger King"
-// store.state=123 // we will get error
-// console.log(store.state)   //o/p:Burger King
+// console.log(storeString.state);  // Output: kfc
+// storeString.state = "Burger King";
+// // storeString.state = 123; ❌ Error: number not assignable to string
+// console.log(storeString.state);  // Output: Burger King
 
-// If we intialize class with number data we can get and set number type data only -> const store: storeObj<number>
-
+// // ✅ Example 2: Working with numbers
 // const storeNumber = new storeObj(123);
-// console.log(store.state);  //o/p:123
-// store.state=777
-// console.log(store.state)   //o/p:777
+// console.log(storeNumber.state);  // Output: 123
+// storeNumber.state = 777;
+// console.log(storeNumber.state);  // Output: 777
 
-
-// ->In this case it accepts string, number , boolean 
-
-const myState=new storeObj<(string | number | boolean)[]>([15]) 
-myState.state=(["kfc",true,777])
-console.log(myState.state) //o/p:['kfc', true, 777]
+// // ✅ Example 3: Working with array of union types
+// const myState = new storeObj<(string | number | boolean)[]>([15]);
+// myState.state = ["kfc", true, 777];
+// console.log(myState.state);  // Output: [ 'kfc', true, 777 ]
